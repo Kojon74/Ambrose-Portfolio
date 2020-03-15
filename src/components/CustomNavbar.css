@@ -1,0 +1,43 @@
+.navbar {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background-color: white;
+    z-index: 2;
+    opacity: 0.9;
+}
+
+.name {
+    font-size: 35px;
+    font-weight: 200;
+}
+
+.name:hover {
+    cursor: pointer;
+}
+
+.link-container {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    color: #3A4D77;
+    line-height: 50px;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.links:hover {
+    cursor: pointer;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+}
+
+.icons {
+    height: 40px;
+}
