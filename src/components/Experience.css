@@ -1,5 +1,30 @@
 .experience {
-    height: 100vh;
+    height: 140vh;
     width: 100%;
+    /* min-height: 100vh; */
 }
 
+.card-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cards {
+    height: auto;
+    width: 30%;
+    margin: 10px 0px 10px 0px;
+}
+
+.date {
+    margin: 10px 0 10px 0;
+    color: #aaa;
+}
+
+@media screen and (max-width: 768px) {
+    .cards {
+        width: 80%;
+    }
+}

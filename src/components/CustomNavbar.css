@@ -10,6 +10,7 @@
 }
 
 .name {
+    width: 30%;
     font-size: 35px;
     font-weight: 200;
 }
@@ -18,11 +19,25 @@
     cursor: pointer;
 }
 
-.link-container {
-    width: 50%;
+.link-contact {
+    width: 70%;
     display: flex;
     justify-content: space-between;
-    color: #3A4D77;
+    align-items: center;
+}
+
+.link-contact-active {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link-container {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    color: black;
     line-height: 50px;
     font-size: 25px;
     font-weight: 300;
@@ -35,9 +50,70 @@
 .contact {
     display: flex;
     justify-content: space-between;
-    width: 10%;
+    width: 15%;
 }
 
 .icons {
-    height: 40px;
+    height: 45px;
+}
+
+.burger {
+    display: none;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .burger {
+        display: block;
+        color: black;
+    }
+
+    .name {
+        width: 80%;
+    }
+
+    .link-contact {
+        position: absolute;
+        right: 0px;
+        height: 91vh;
+        top: 9vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 50%;
+        transform: translateX(0%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .link-contact-active {
+        position: absolute;
+        right: 0px;
+        height: 91vh;
+        top: 9vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .link-container {
+        flex-direction: column;
+        align-items: center;
+        height: 70%;
+    }
+
+    .contact {
+        width: 50%;
+    }
 }

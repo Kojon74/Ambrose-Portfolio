@@ -1,6 +1,7 @@
 .skills {
-    height: 100vh;
+    height: auto;
     width: 100%;
+    min-height: 100vh;
 }
 
 .page-title {
@@ -9,16 +10,17 @@
     text-align: center;
 }
 
-.skills .container {
+.skills-container {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 0, 0, 0, 0;
 }
 
 .column {
     display: inline-block;
-    margin-left: 15px;
+    margin: 8% 0px 0px 15px;
     width: 33%;
 }
 
@@ -39,6 +41,23 @@
 
 .progressbar {
     width: 175px;
-    display: inline-block;
     margin-right: 15px;
+    color: #ac0;
+    border-color: saddlebrown;
+}
+
+.progress-bar {
+    background-color: #999;
+}
+
+@media screen and (max-width: 1091px) {
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        margin-top: 20px;
+        width: 90%;
+    }
 }

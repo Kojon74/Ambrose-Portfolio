@@ -7,10 +7,10 @@ export default class Skills extends Component {
         return (
             <div className="skills">
                 <div className="page-title">Skills</div>
-                <div className="container">
+                <div className="skills-container">
                     <div className="column">
                         <div className="column-title">Software</div>
-                        <div className="skill">SolidWorks<ProgressBar className="progressbar" now={100}/></div>
+                        <div className="skill">SolidWorks<ProgressBar className="progressbar"><ProgressBar className="progressbar" now={90}/></ProgressBar></div>
                         <div className="skill">MATLAB<ProgressBar className="progressbar" now={90}/></div>
                         <div className="skill">Arduino<ProgressBar className="progressbar" now={90}/></div>
                         <div className="skill">Microsoft Office<ProgressBar className="progressbar" now={90}/></div>
@@ -33,7 +33,6 @@ export default class Skills extends Component {
                         <div className="skill">Multimeter<ProgressBar className="progressbar" now={90}/></div>
                     </div>
                 </div>
-                
             </div>
         )
     }
